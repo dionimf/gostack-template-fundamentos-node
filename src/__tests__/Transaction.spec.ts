@@ -54,7 +54,7 @@ describe('Transaction', () => {
           type: 'income',
           value: 1200,
         }),
-      ]),
+      ])
     );
 
     expect(response.body.balance).toMatchObject({
@@ -75,7 +75,7 @@ describe('Transaction', () => {
     expect(response.body).toMatchObject(
       expect.objectContaining({
         error: expect.any(String),
-      }),
+      })
     );
   });
 });
